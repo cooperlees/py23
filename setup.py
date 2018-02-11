@@ -22,6 +22,7 @@ setup(
       'Development Status :: 3 - Alpha',
     ),
     install_requires=['click'],
+    tests_require=['pytest', 'tox'],
     entry_points={
         'console_scripts': [
             'py23 = py23.main:main'
