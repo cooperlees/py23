@@ -2,7 +2,12 @@
 
 from py23 import __version__
 from setuptools import setup
+from sys import version
 
+# Add typing if we're unfortunately Python 2
+INSTALL_REQUIRES = ['click', 'future', 'six']
+if version[0] == '2':
+    INSTALL_REQUIRES.append('typing')
 
 setup(
     name='py23',
@@ -21,11 +26,11 @@ setup(
       'Programming Language :: Python :: 3.6',
       'Development Status :: 3 - Alpha',
     ),
-    install_requires=['click'],
+    install_requires=[],
     tests_require=['pytest', 'tox'],
     entry_points={
         'console_scripts': [
-            'py23 = py23.main:main'
+            'py23 = py23.py23:main'
         ]
     },
     test_suite='py23.tests.base',
