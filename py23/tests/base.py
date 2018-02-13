@@ -33,6 +33,7 @@ class TestPy23(unittest.TestCase):
             ff.write(self.output_data)
 
     def tearDown(self):
+        ''' Be a good person and always clean up unit test data '''
         if exists(self.filename):
             unlink(self.filename)
 
@@ -56,13 +57,11 @@ class TestPy23(unittest.TestCase):
     def test_subprocess_echo(self):
         actual_output = subprocess_echo()
         expected_output = (
-            'echo of Hello World! match as they are both <{} \'str\'>'.format(
+            u'echo of "Hello World!" match. They are both <{} \'str\'>'.format(
                 self.object_type
             )
         )
-        self.assertEqual(
-            actual_output, expected_output, 'Output from echo did not match'
-        )
+        self.assertEqual(actual_output, expected_output)
 
 
 if __name__ == '__main__':
