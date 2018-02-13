@@ -1,4 +1,7 @@
 # py23
+
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Build Status](https://travis-ci.org/cooperlees/py23.svg?branch=master)](https://travis-ci.org/cooperlees/py23) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) 
+
 Code used for a Python 2 to Python 3 tutorial to be presented at Scaleconf 2018.
 - http://scaleconf.org/
 
