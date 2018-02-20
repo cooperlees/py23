@@ -43,7 +43,7 @@ def binary_file_open(
 
 
 def iteritems_fun(
-    data,       # type: Dict
+    data,       # type: Dict[str, str]
     py_version  # type: int
 ):  # type: (...) -> str
     '''Iterate data and return the str with message'''
