@@ -63,10 +63,10 @@ def iteritems_fun(
 def subprocess_echo(
     to_echo='"Hello World!"'  # type: str
 ):  # type: (...) -> str
-    if six.PY2:
-        output = subprocess.check_output(['echo', to_echo])
-    else:
-        output = subprocess.check_output(['echo', to_echo], encoding='utf-8')
+    # if six.PY2:
+    output = subprocess.check_output(['echo', to_echo])
+    # else:
+    #    output = subprocess.check_output(['echo', to_echo], encoding='utf-8')
 
     if output == (to_echo + '\n'):
         return (
